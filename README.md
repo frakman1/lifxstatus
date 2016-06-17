@@ -1,13 +1,14 @@
 # lifxstatus
 LIFX IM Status Updater . 
-Continuously monitors your IM status and matches your LIFX colour  
+Continuously monitors your IM status and matches your LIFX colour.
+
 Never miss a meeting again. See [demo](https://youtu.be/FoNCXtaVobA)
 
 
 - Currently supports only Microsoft Lync and Cisco Jabber IM clients.
 - Works on the MAC Only. 
 - Tested with python 2.7.11 on MacBookPro running El Capitan.
-- Uses applescript to peek at IM client's status info. Python script then handles outand controls lights.
+- Uses applescript to extract IM client's status info. Python script then handles output and controls lights accordingly.
 
 
 ##Prerequisites:
