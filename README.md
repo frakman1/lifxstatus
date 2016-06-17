@@ -8,7 +8,7 @@ e.g. Available = Green Light, Away = Yellow Light etc.
 Never miss a meeting again. See [demo](https://youtu.be/FoNCXtaVobA)
 
 
-- Currently supports only Microsoft Lync and Cisco Jabber IM clients.
+- Currently only supports Microsoft Lync and Cisco Jabber IM clients.
 - Works on the MAC Only. 
 - Tested with python 2.7.11 on MacBookPro running El Capitan.
 - Uses applescript to extract IM client's status info. Python script then handles output and controls lights accordingly.
