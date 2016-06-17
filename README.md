@@ -1,5 +1,6 @@
 # lifxstatus
-LIFX IM Status Updater . 
+LIFX IM Status Updater.
+
 Continuously monitors your IM status and matches your LIFX colour.
 
 Never miss a meeting again. See [demo](https://youtu.be/FoNCXtaVobA)
