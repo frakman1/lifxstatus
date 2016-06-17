@@ -13,10 +13,10 @@ import time
 def createBulb(ip, macString, port = 56700):        
     return lazylights.Bulb(b'LIFXV2', binascii.unhexlify(macString.replace(':', '')), (ip,port))
 #------------------------------------------------------------------------------------------------------------	
-myBulbPC = createBulb('192.168.1.x','xx:xx:xx:xx:xx:xx')  #Bulb for PC
-myBulbWonky = createBulb('192.168.1.x','xx:xx:xx:xx:xx:xx')  #Bulb for Right  side of screen
-myBulbWhitey1 = createBulb('192.168.1.x','xx:xx:xx:xx:xx:xx')  #Bulb for left  side of screen
-bulbs=[myBulbPC,myBulbWonky,myBulbWhitey1]
+myBulb1 = createBulb('192.168.1.x','xx:xx:xx:xx:xx:xx')  
+myBulb2 = createBulb('192.168.1.x','xx:xx:xx:xx:xx:xx')  
+myBulb3 = createBulb('192.168.1.x','xx:xx:xx:xx:xx:xx')  
+bulbs=[myBulb1,myBulb2,myBulb3]
 
 
 ans=True
@@ -28,13 +28,13 @@ while ans:
     """)
     ans=raw_input("Which Mac IM Client do you wish to support? ") 
     if ans=="1": 
-      print("\n Microsoft Lync") 
+      print("\n Microsoft Lync.") 
       break
     elif ans=="2":
-      print("\n Cisco Jabber") 
+      print("\n Cisco Jabber.") 
       break
     elif ans=="q":
-      print("\n Goodbye") 
+      print("\n Goodbye.") 
       exit(0)
     elif ans !="":
       print("\n Not Valid Choice Try again") 
@@ -68,7 +68,7 @@ while True:
     print status
     N += 1
     if (status == savedStatus) and (firstTime == False) and ( N % 10):
-        print "No Change"
+        print "No Change."
         continue
    
     print "********************** Periodic Check  *******************"  
