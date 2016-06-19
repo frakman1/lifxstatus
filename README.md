@@ -5,7 +5,7 @@ Continuously monitors your IM status and sets your LIFX colour to match it.
 
 e.g. Available = Green Light, Away = Yellow Light etc.
 
-Never miss a meeting again. See [demo](https://youtu.be/FoNCXtaVobA)
+**Never miss a meeting again.** See [demo](https://youtu.be/FoNCXtaVobA)
 
 
 - Currently only supports Microsoft Lync and Cisco Jabber IM clients.
