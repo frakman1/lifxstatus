@@ -72,25 +72,32 @@ while True:
         continue
    
     print "********************** Periodic Check  *******************"  
-    lazylights.set_power(bulbs,True)
+    try:
+        lazylights.set_power(bulbs,True)
+    except: # catch *all* exceptions
+        e = sys.exc_info()[0]
+        print("Unexpected error:", sys.exc_info()[0])
+    
       
     if (status == 'Available'):
         print "Status Detected!(%s)" % status
         c = Color("green")
-        lazylights.set_state(bulbs,c.hue*360,(c.saturation),1,0,(1000),False);
-        
 
     elif (status == 'Busy') or (status == 'Do Not Disturb') or (status == 'In a Meeting'):
         print "Status Detected!(%s)" % status
         c = Color("red")
-        lazylights.set_state(bulbs,c.hue*360,(c.saturation),1,0,(1000),False);
-
+        
     elif (status == 'Away') or (status == 'Be Right Back') or (status == 'Off Work'):
         print "Status Detected(%s)" % status
         c = Color("yellow")
+
+    try:
         lazylights.set_state(bulbs,c.hue*360,(c.saturation),1,0,(1000),False);
+    except: # catch *all* exceptions
+        e = sys.exc_info()[0]
+        print("Unexpected error:", sys.exc_info()[0])
+
 
     savedStatus = status
     firstTime = False
-    
     
